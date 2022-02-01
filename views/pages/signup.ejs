@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ingreso</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1>Registro de Usuario</h1>
+            <br>
+            <form action="/signup/local" method="post" autocomplete="off">
+                <div class="form-group">
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input id="nombre" class="form-control" type="text" name="name" required>
+                    <label for="nombre">Ingrese su Email</label>
+                    <input id="nombre" class="form-control" type="email" name="email" required>
+                    <label for="password">Ingrese su Direccion</label>
+                    <input id="password" class="form-control" type="text" name="address" required>
+                    <label for="password">Ingrese su Edad</label>
+                    <input id="password" class="form-control" type="number" name="age" required>
+                    <label for="password">Ingrese su Numero de teléfono</label>
+                    <input id="password" class="form-control" type="number" name="phone" required>
+                    <label for="password">Ingrese su contraseña</label>
+                    <input id="password" class="form-control" type="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-success mt-3">Registrarse</button>
+            </form>
+            <h4>Ya se encuentra registrado?</h4>
+            <button class="btn btn-info mt-3" onclick="location.href='/login'">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

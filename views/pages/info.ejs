@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <br>
+            <div class="p-5 mt-5">
+
+                <h1>
+                    Sistema operativo: <%= info.platform %>
+                </h1>
+                <br>
+                <h1>
+                    Versión de node.js: <%= info.version %>
+                </h1>
+                <br>
+                <h1>
+                    Argumentos: <%= info.argv %>
+                </h1>
+                <br>
+                <h1>
+                    Memoria: <%= info.memory %>
+                </h1>
+                <br>
+                <h1>
+                    Path: <%= info.executable %>
+                </h1>
+                <br>
+                <h1>
+                    Process id: <%= info.pid %>
+                </h1>
+                <br>
+                <h1>
+                    Carpeta: <%= info.path %>
+                </h1>
+                <br>
+                <h1>
+                    CPUs: <%= info.cpus %>
+                </h1>
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
